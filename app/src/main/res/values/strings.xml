@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz_title">What can be built from this pile of trash?</string>
+    <string name="question_1">1. What vehicle you can make from old boxes?</string>
+    <string name="question_2">2. Plastic is a huge problem for the Ocean. What Pharrell Williams makes from that trash?</string>
+    <string name="question_3">3. You can buy the underwear complitely made of food waste. What kind of?</string>
+    <string name="question_4">4. How many plastic bottles you need to make one pair of jeans for an adult?</string>
+    <string name="question_5">5. How you can use DIY wine bottles?</string>
+
+    <string name="nothing">Nothing</string>
+    <string name="bicycle">Bicycle</string>
+    <string name="car">Car</string>
+    <string name="anything">Anything, even a spaceship</string>
+    <string name="shoes">Shoes</string>
+    <string name="hats">Hats</string>
+    <string name="chips">Chips</string>
+    <string name="jeans">Jeans</string>
+    <string name="coffee_grounds">Coffee grounds</string>
+    <string name="chicken_bones">Chicken bones</string>
+    <string name="banana_peels">Banana peels</string>
+    <string name="bubble_gum">Bubble gum</string>
+    <string name="number_8_10">8-10</string>
+    <string name="nearly_40">nearly 40</string>
+    <string name="number_80">at least 80</string>
+    <string name="nearly_150">nearly 150</string>
+    <string name="house">Build a house</string>
+    <string name="vase">Use it as a vase</string>
+    <string name="lamp">Make a lamp</string>
+    <string name="olive_oil">Fill it with olive oil</string>
+
+    <string name="text_field_hint">What is your name?</string>
+
+    <string name="submit">Submit</string>
+
+</resources>
