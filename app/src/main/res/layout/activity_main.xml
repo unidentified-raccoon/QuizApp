@@ -282,14 +282,32 @@
             android:textSize="@dimen/text_answer" />
 
         <CheckBox
-            android:id="@+id/checkbox_olive_oil"
+            android:id="@+id/checkbox_aiplane"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/checkbox_margin_bottom"
             android:paddingLeft="@dimen/checkbox_padding_left"
-            android:text="@string/olive_oil"
+            android:text="@string/airplane"
             android:textColor="@color/answer_color"
             android:textSize="@dimen/text_answer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/question_margin_bottom"
+            android:fontFamily="@font/roboto_medium"
+            android:text="6. Do you recycle?"
+            android:textColor="@color/question_color"
+            android:textSize="@dimen/text_question" />
+
+        <EditText
+            android:id="@+id/main_question_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_answer"
+            android:layout_marginTop="@dimen/text_field_margin_top"
+            android:hint="say 'yes' ;)"
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/name_view"

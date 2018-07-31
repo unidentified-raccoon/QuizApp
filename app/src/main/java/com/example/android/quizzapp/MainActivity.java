@@ -103,19 +103,34 @@ public class MainActivity extends AppCompatActivity {
 
         CheckBox questionFiveHouse = (CheckBox) findViewById(R.id.checkbox_house);
         CheckBox questionFiveLamp = (CheckBox) findViewById(R.id.checkbox_lamp);
-        CheckBox questionFiveOliveOil = (CheckBox) findViewById(R.id.checkbox_olive_oil);
+        CheckBox questionFiveAirplane = (CheckBox) findViewById(R.id.checkbox_airplane);
         CheckBox questionFiveVase = (CheckBox) findViewById(R.id.checkbox_vase);
 
-        if (questionFiveHouse.isChecked() & questionFiveLamp.isChecked() & questionFiveOliveOil.isChecked() & questionFiveVase.isChecked()) {
+        if (questionFiveHouse.isChecked() & questionFiveLamp.isChecked() & questionFiveAirplane.isChecked() & questionFiveVase.isChecked()) {
+            questionFiveAnswer = false;
+        } else if (questionFiveHouse.isChecked() & questionFiveLamp.isChecked() & questionFiveVase.isChecked()) {
             questionFiveAnswer = true;
-        } else if (questionFiveHouse.isChecked() & questionFiveLamp.isChecked() || questionFiveOliveOil.isChecked() & questionFiveVase.isChecked()) {
-            questionFiveAnswer = true;
-        } else if (questionFiveHouse.isChecked() & questionFiveOliveOil.isChecked() || questionFiveLamp.isChecked() & questionFiveVase.isChecked()) {
-            questionFiveAnswer = true;
-        } else if (questionFiveHouse.isChecked() & questionFiveVase.isChecked() || questionFiveLamp.isChecked() & questionFiveOliveOil.isChecked()) {
+        } else if (questionFiveHouse.isChecked() & questionFiveAirplane.isChecked() || questionFiveLamp.isChecked() & questionFiveVase.isChecked() & questionFiveAirplane.isChecked()) {
+            questionFiveAnswer = false;
+        } else if (questionFiveHouse.isChecked() & questionFiveVase.isChecked() || questionFiveLamp.isChecked()) {
             questionFiveAnswer = true;
         }
 
         return questionFiveAnswer;
     }
+
+    // Method to check the state of a sixth question
+
+    private boolean questionFiveCheck() {
+        boolean questionSixAnswer = false;
+
+        EditText questionSixChoice = (EditText) findViewById(R.id.main_question_view);
+
+        if (questionSixChoice.getText().toString() == "yes" || questionSixChoice.getText().toString() == "Yes" || questionSixChoice.getText().toString() == "YES") {
+            questionSixAnswer = true;
+        }
+
+        return questionSixAnswer;
+    }
+
 }
